@@ -41,6 +41,6 @@ public String pigLatin(String sWord)
 		return sWord.substring(1) + sWord.substring(0,1) + "ay";
 	}
 	else{
-		return "well fuck me";
+		return sWord.substring(findFirstVowel(sWord)) + sWord.substring(0, findFirstVowel(sWord)) + "ay";
 	}
 }
